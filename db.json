@@ -1,8 +1,14 @@
 {
-  "posts": [
+  "users": [
     {
       "id": 1,
-      "title": "hello"
+      "name": "user1",
+      "age": 55
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "age": 35
     }
   ],
   "profile": {
