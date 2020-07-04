@@ -1,12 +1,17 @@
-[
 {
-id: 1,
-name: "person1",
-age: "55"
-},
-{
-id: 2,
-name: "person2",
-age: "45"
+  "persons":[
+    {
+    id: 1,
+    name: "person1",
+    age: "55"
+    },
+    {
+    id: 2,
+    name: "person2",
+    age: "45"
+    }
+],
+  "profile": {
+    "name": "typicode"
+  }
 }
-]
