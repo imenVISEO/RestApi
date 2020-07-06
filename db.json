@@ -1,9 +1,1693 @@
-{
-	"boomiAPI": {
-		"@type": "EnvironmentExtensions"
 
+{
+  "boomiAPI": 
+  {
+	"@type": "EnvironmentExtensions",
+	"connections": {
+		"@type": "Connections",
+		"connection": [
+			{
+				"@type": "Connection",
+				"field": [
+					{
+						"@type": "Field",
+						"id": "url",
+						"value": "https://eoiz-test.fa.em4.oraclecloud.com/publicFinancialCommonErpIntegration/ErpIntegrationService?WSDL",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "endpoint",
+						"value": "https://eoiz-test.fa.em4.oraclecloud.com:443/publicFinancialCommonErpIntegration/ErpIntegrationService",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "security",
+						"value": "BASIC",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "username",
+						"value": "BOOMI_INT",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "password",
+						"encryptedValueSet": true,
+						"usesEncryption": true,
+						"componentOverride": false
+					}
+				],
+				"id": "95a63744-4571-4880-ad51-d0683e1daf70",
+				"name": "[ORAFIN] Oracle Cloud Finance (FBDI)"
+			},
+			{
+				"@type": "Connection",
+				"field": [
+					{
+						"@type": "Field",
+						"id": "directory",
+						"value": "",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					}
+				],
+				"id": "a0913e8a-4b2a-4c47-ad5a-e36e56d09080",
+				"name": "[FINEX] Shared Directory"
+			},
+			{
+				"@type": "Connection",
+				"field": [
+					{
+						"@type": "Field",
+						"id": "host",
+						"value": "smtp.office365.com",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "user",
+						"value": "SMTP_BOOMI@nexity.fr",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "password",
+						"encryptedValueSet": true,
+						"usesEncryption": true,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "port",
+						"value": "587",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "usessl",
+						"value": "true",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "usesmtpauth",
+						"value": "false",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					}
+				],
+				"id": "69eeabe6-7948-4eaa-bdf5-5de8f26c9cd9",
+				"name": "[FINEX] Email Relay SMTP"
+			},
+			{
+				"@type": "Connection",
+				"field": [
+					{
+						"@type": "Field",
+						"id": "awsAccessKey",
+						"value": "",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					},
+					{
+						"@type": "Field",
+						"id": "awsSecretKey",
+						"encryptedValueSet": false,
+						"usesEncryption": true,
+						"componentOverride": false
+					}
+				],
+				"id": "e645f816-940f-4fa6-80cd-a72ea140f7ce",
+				"name": "[FINEX] Amazon S3 REST"
+			},
+			{
+				"@type": "Connection",
+				"field": [
+					{
+						"@type": "Field",
+						"id": "directory",
+						"encryptedValueSet": false,
+						"usesEncryption": false,
+						"componentOverride": false
+					}
+				],
+				"id": "c8101caf-caf0-4497-a69d-f27017b8cd39",
+				"name": "[FINEX] Shared Directory"
+			}
+		]
 	},
-	"profile": {
-		"name": "imenVISEO"
-	}
+	"crossReferences": {
+		"@type": "CrossReferences",
+		"crossReference": [
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "AAA",
+							"ref2": "01",
+							"ref3": "abcd",
+							"ref4": "abcd",
+							"ref5": "",
+							"ref6": "",
+							"ref7": "",
+							"ref8": "",
+							"ref9": "",
+							"ref10": "",
+							"ref11": "",
+							"ref12": "",
+							"ref13": "",
+							"ref14": "",
+							"ref15": "",
+							"ref16": "",
+							"ref17": "",
+							"ref18": "",
+							"ref19": "",
+							"ref20": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "AAA",
+							"ref2": "02",
+							"ref3": "xyz",
+							"ref4": "xyz",
+							"ref5": "",
+							"ref6": "",
+							"ref7": "",
+							"ref8": "",
+							"ref9": "",
+							"ref10": "",
+							"ref11": "",
+							"ref12": "",
+							"ref13": "",
+							"ref14": "",
+							"ref15": "",
+							"ref16": "",
+							"ref17": "",
+							"ref18": "",
+							"ref19": "",
+							"ref20": ""
+						}
+					]
+				},
+				"id": "46ccf826-cec4-42e8-ab48-b0d4402181d9",
+				"overrideValues": true,
+				"name": "Sample Cross Reference Table 2"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "01",
+							"ref2": "AA"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "02",
+							"ref2": "BB"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "03",
+							"ref2": "CC"
+						}
+					]
+				},
+				"id": "99434159-8ab3-4d94-bc9a-761ea7489354",
+				"overrideValues": true,
+				"name": "Sample Cross Reference Table 1"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HDG_BU",
+							"ref2": "300000001718092",
+							"ref3": "HOLDING_LP_NF",
+							"ref4": "300000001588789",
+							"ref5": "300000001588839"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "IR_BU",
+							"ref2": "300000001718065",
+							"ref3": "IR_LP_NF",
+							"ref4": "300000001588786",
+							"ref5": "300000001588819"
+						}
+					]
+				},
+				"id": "1c70e136-33f1-45ad-bb99-af288d828877",
+				"overrideValues": true,
+				"name": "[ORAFIN] Organization Information"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "JournalImportLauncher",
+							"ref2": "BOOMI",
+							"ref3": "FAFusionImportExport",
+							"ref4": "fin/generalLedger/import",
+							"ref5": "GLInterface"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "FinancialTaxEntryRepo",
+							"ref2": "BOOMI",
+							"ref3": "FAFusionImportExport",
+							"ref4": "fin/tax/import",
+							"ref5": "ZxTERDataUploadInterface"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "BankStatementsProcessingForCloud",
+							"ref2": "BOOMI",
+							"ref3": "FAFusionImportExport",
+							"ref4": "fin/cashManagement/import",
+							"ref5": "Bank"
+						}
+					]
+				},
+				"id": "eea782f9-ac47-461f-8366-bcb8c6192b8a",
+				"overrideValues": false,
+				"name": "[ORAFIN] FBDI - UploadFileToUcm"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "JournalImportLauncher",
+							"ref2": "/oracle/apps/ess/financials/commonModules/shared/common/interfaceLoader",
+							"ref3": "InterfaceLoaderController",
+							"ref4": "15",
+							"ref5": "[REQUESTID]",
+							"ref6": "N",
+							"ref7": "N",
+							"ref8": "[UNIQUE_FILE_NAME]",
+							"ref9": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "FinancialTaxEntryRepo",
+							"ref2": "/oracle/apps/ess/financials/commonModules/shared/common/interfaceLoader",
+							"ref3": "InterfaceLoaderController",
+							"ref4": "44",
+							"ref5": "[REQUESTID]",
+							"ref6": "N",
+							"ref7": "N",
+							"ref8": "[UNIQUE_FILE_NAME]",
+							"ref9": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "BankStatementsProcessingForCloud",
+							"ref2": "/oracle/apps/ess/financials/cashManagement/bankStatements",
+							"ref3": "BankStatementsProcessingForCloud",
+							"ref4": "SWIFT MT940 Format",
+							"ref5": "#NULL",
+							"ref6": "CE_BANK_STMT_SWIFT940",
+							"ref7": "false",
+							"ref8": "#NULL",
+							"ref9": "[REQUESTID]"
+						}
+					]
+				},
+				"id": "32e4a195-58d4-42d1-9188-7d7866a115d5",
+				"overrideValues": false,
+				"name": "[ORAFIN] FBDI - InterfaceLoader"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "72",
+							"ref2": "SC172",
+							"ref3": "300000001588786",
+							"ref4": "IR_LP_NF",
+							"ref5": "300000001588786",
+							"ref6": "300000001588371",
+							"ref7": "NEXIM 1",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "IR_BU",
+							"ref11": "300000001718065",
+							"ref12": "300000001588819",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "38012",
+							"ref2": "SL468",
+							"ref3": "300000001588786",
+							"ref4": "IR_LP_NF",
+							"ref5": "300000001588786",
+							"ref6": "300000001588371",
+							"ref7": "MORANGIS CENTRAL PARC LOT 1",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "IR_BU",
+							"ref11": "300000001718065",
+							"ref12": "300000001588819",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "98004",
+							"ref2": "SL523",
+							"ref3": "300000001588786",
+							"ref4": "IR_LP_NF",
+							"ref5": "300000001588786",
+							"ref6": "300000001588371",
+							"ref7": "ST OUEN PARC LOT I 1",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "IR_BU",
+							"ref11": "300000001718065",
+							"ref12": "300000001588819",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "62181",
+							"ref2": "SU083",
+							"ref3": "300000001588786",
+							"ref4": "IR_LP_NF",
+							"ref5": "300000001588786",
+							"ref6": "300000001588371",
+							"ref7": "ACTE 1",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "IR_BU",
+							"ref11": "300000001718065",
+							"ref12": "300000001588819",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "62",
+							"ref2": "SC400",
+							"ref3": "300000001588789",
+							"ref4": "HOLDING_LP_NF",
+							"ref5": "300000001588789",
+							"ref6": "300000001588343",
+							"ref7": "NEXITY",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "HDG_BU",
+							"ref11": "300000001718092",
+							"ref12": "300000001588839",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "269",
+							"ref2": "SC251",
+							"ref3": "300000001588789",
+							"ref4": "HOLDING_LP_NF",
+							"ref5": "300000001588789",
+							"ref6": "300000001588343",
+							"ref7": "NEXITY BLUE OFFICE",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "HDG_BU",
+							"ref11": "300000001718092",
+							"ref12": "300000001588839",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "800",
+							"ref2": "SC175",
+							"ref3": "300000001588789",
+							"ref4": "HOLDING_LP_NF",
+							"ref5": "300000001588789",
+							"ref6": "300000001588343",
+							"ref7": "NEXIM 4",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "HDG_BU",
+							"ref11": "300000001718092",
+							"ref12": "300000001588839",
+							"ref13": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "801",
+							"ref2": "SC176",
+							"ref3": "300000001588789",
+							"ref4": "HOLDING_LP_NF",
+							"ref5": "300000001588789",
+							"ref6": "300000001588343",
+							"ref7": "NEXIM 5",
+							"ref8": "PRIMARY",
+							"ref9": "1951-01-01T00:00:00.000+00:00",
+							"ref10": "HDG_BU",
+							"ref11": "300000001718092",
+							"ref12": "300000001588839",
+							"ref13": ""
+						}
+					]
+				},
+				"id": "34f5afbf-f2ff-479e-bd7a-d22dc3e6f985",
+				"overrideValues": true,
+				"name": "[FINEX] Transco Codes Sociétés"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863039",
+							"ref2": "BASWARE / ALUSTA"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863059",
+							"ref2": "MIGRATION"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Primary Ledger",
+							"ref2": "Primary Ledger"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Receivables",
+							"ref2": "Receivables"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Statistical",
+							"ref2": "Statistical"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863099",
+							"ref2": "VCD"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863044",
+							"ref2": "DETERMINE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "EBS Coexistence",
+							"ref2": "EBS Transfer"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Manual",
+							"ref2": "Manual"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863046",
+							"ref2": "NL FNP"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863062",
+							"ref2": "REFACT FRAIS FI"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Revenue Management",
+							"ref2": "Revenue Management"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Tax",
+							"ref2": "Tax"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863100",
+							"ref2": "WEAZY"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Allocations",
+							"ref2": "Allocations"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "AutoCopy",
+							"ref2": "AutoCopy"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863043",
+							"ref2": "CIFACIL"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863048",
+							"ref2": "GESIDOC"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863055",
+							"ref2": "NEXIFACT"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863050",
+							"ref2": "NL HONORAIRES COM EXT"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000002334634",
+							"ref2": "PROV CCA ENG PUB"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863063",
+							"ref2": "RÉSULTAT SOCIAL"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863094",
+							"ref2": "SAGE FRP"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863098",
+							"ref2": "VBANK"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863036",
+							"ref2": "ALTAIX"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863061",
+							"ref2": "PROVISION CCA"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Portal GL",
+							"ref2": "Portal Reports"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Revaluation",
+							"ref2": "Revaluation"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Assets",
+							"ref2": "Assets"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Real Estate",
+							"ref2": "Real Estate"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Receipt Accounting",
+							"ref2": "Receipt Accounting"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Spreadsheet",
+							"ref2": "Spreadsheet"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863097",
+							"ref2": "UTILITAIRE SPÉCIFIQUE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863101",
+							"ref2": "YARDI"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Balance Transfer",
+							"ref2": "Balance Transfer"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863042",
+							"ref2": "CA PRÉVISIONNEL"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Cost Accounting",
+							"ref2": "Cost Accounting"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863045",
+							"ref2": "ENGAGEMENT PUBLICITAIRE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Expenses",
+							"ref2": "Expenses"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863051",
+							"ref2": "HR ACCESS"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863056",
+							"ref2": "NL ENGAGEMENT"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Other",
+							"ref2": "Other"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863060",
+							"ref2": "PERICLESSE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Payables",
+							"ref2": "Payables"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Payroll",
+							"ref2": "Payroll"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000002334633",
+							"ref2": "REPRISE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863040",
+							"ref2": "BASWARE / OPTIMIZ"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Channel Revenue",
+							"ref2": "Channel Revenue"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863049",
+							"ref2": "GFA"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Global Intercompany",
+							"ref2": "Global Intercompany"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863057",
+							"ref2": "NL FACTURATION"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "PS Compliance",
+							"ref2": "PS Compliance"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Purchasing",
+							"ref2": "Purchasing"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863096",
+							"ref2": "SIGEO"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "US Federal",
+							"ref2": "US Federal"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863038",
+							"ref2": "APPLI RH"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863041",
+							"ref2": "BILAN ECONOMIQUE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863102",
+							"ref2": "CLÉO"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Cash Management",
+							"ref2": "Cash Management"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Closing Journal",
+							"ref2": "Closing Journal"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863047",
+							"ref2": "FAF"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863052",
+							"ref2": "ICS"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863053",
+							"ref2": "LITIGE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863054",
+							"ref2": "NE ENGAGEMENT"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863156",
+							"ref2": "NL HONORAIRES COM"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863058",
+							"ref2": "NOTILUS"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "MRC Open Balances",
+							"ref2": "Open Balances"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Project Accounting",
+							"ref2": "Projects"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000002334635",
+							"ref2": "REVENTILATION VCD"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "300000001863095",
+							"ref2": "SAGE SBE"
+						}
+					]
+				},
+				"id": "af50485a-67b7-4bad-8f66-f2637e09cdee",
+				"overrideValues": true,
+				"name": "[ORAFIN] Journal Entry"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "JournalImportLauncher",
+							"ref2": "/oracle/apps/ess/financials/generalLedger/programs/common/",
+							"ref3": "JournalImportLauncher",
+							"ref4": "[DATA_ACCESS_SET_ID]",
+							"ref5": "[JE_SOURCE_NAME]",
+							"ref6": "[LEGER_ID]",
+							"ref7": "ALL",
+							"ref8": "N",
+							"ref9": "N",
+							"ref10": "O",
+							"ref11": "",
+							"ref12": "",
+							"ref13": "",
+							"ref14": "",
+							"ref15": "",
+							"ref16": "",
+							"ref17": "",
+							"ref18": "",
+							"ref19": "",
+							"ref20": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "FinancialTaxEntryRepo",
+							"ref2": "/oracle/apps/ess/financials/tax/report/",
+							"ref3": "FinancialTaxEntryRepo",
+							"ref4": "#NULL",
+							"ref5": "[LEGER_ID]",
+							"ref6": "ZxTERDataUploadInterface",
+							"ref7": "PURCHASE_TAXABLE_JOURNAL",
+							"ref8": "#NULL",
+							"ref9": "Y",
+							"ref10": "Y",
+							"ref11": "Y",
+							"ref12": "#NULL",
+							"ref13": "IMPORT",
+							"ref14": "",
+							"ref15": "",
+							"ref16": "",
+							"ref17": "",
+							"ref18": "",
+							"ref19": "",
+							"ref20": ""
+						}
+					]
+				},
+				"id": "c851c07c-582e-43c0-be1e-55a876857639",
+				"overrideValues": false,
+				"name": "[ORAFIN] FBDI - Launcher"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[NOTILUS>ORAFIN] (Sched) NDF02: Note de frais OPCON",
+							"ref2": "jmcoupin-ext@nexity.fr; proberts@nexity.fr; pascal.jezequel@viseo.com; butorovic.anthony@accenture.com; pierre.itey@accenture.com; mtrigui-ext@nexity.fr; cjoao@nexity.fr; smahi-ext@nexity.fr; zineb.elkebir@viseo.com; chawqui.haddad@accenture.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[NOTILUS>ORAFIN] (Sched) NDF01 : Paiement OPCON",
+							"ref2": "jean-marc.coupin@viseo.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[NOTLIUS>ORAFIN] (Sched) NDF04 : Avances OPCON",
+							"ref2": "zineb.elkebir@viseo.com;jean-marc.coupin@viseo.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[HRACCESS>ORAFIN] (Sched) PAI01 : Paiements OPCON ",
+							"ref2": "zineb.elkebir@viseo.com;jean-marc.coupin@viseo.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[TEST] Create Dummy Error",
+							"ref2": "alexander_schwer@dell.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[SAGE>ORAFIN] (Sched) TRS05: Relevés bancaires OPCON",
+							"ref2": "jmcoupin-ext@nexity.fr; proberts@nexity.fr; pascal.jezequel@viseo.com; butorovic.anthony@accenture.com; pierre.itey@accenture.com; mtrigui-ext@nexity.fr; cjoao@nexity.fr; smahi-ext@nexity.fr; zineb.elkebir@viseo.com; chawqui.haddad@accenture.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[ORAFIN>AS400] (Sched) REF03: Référentiel Société OPCON",
+							"ref2": "jean-marc.coupin@viseo.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[ORAFIN>AS400] (Sched) REF06: Référentiel Tiers OPCON",
+							"ref2": "jmcoupin-ext@nexity.fr; proberts@nexity.fr; pascal.jezequel@viseo.com; butorovic.anthony@accenture.com; pierre.itey@accenture.com; mtrigui-ext@nexity.fr; cjoao@nexity.fr; smahi-ext@nexity.fr; zineb.elkebir@viseo.com; chawqui.haddad@accenture.com"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "[SAGE_FRP>ORAFIN] (Sched) TRS03 : Mouvement de trésorerie",
+							"ref2": "zineb.elkebir@viseo.com;jean-marc.coupin@viseo.com"
+						}
+					]
+				},
+				"id": "2dc04812-087e-46e9-a043-d52a447cd9e4",
+				"overrideValues": true,
+				"name": "[FWK] Error Notification Recipients (by Process)"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "IR",
+							"ref2": "300000001588786",
+							"ref3": "300000001588371",
+							"ref4": "PRIMARY",
+							"ref5": "300000001718065",
+							"ref6": "300000001718065"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HDG",
+							"ref2": "300000001588789",
+							"ref3": "300000001588343",
+							"ref4": "PRIMARY",
+							"ref5": "300000001718092",
+							"ref6": "300000001718092"
+						}
+					]
+				},
+				"id": "8b6b6313-eef7-47ef-a1df-6ce5df0e17bc",
+				"overrideValues": true,
+				"name": "[FINEX] Transco BU_ORACLE"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "IR",
+							"ref2": "438605",
+							"ref3": "99999",
+							"ref4": "CHARGES A PAYER ORGANIC",
+							"ref5": "438600",
+							"ref6": "99999005",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "IR",
+							"ref2": "438605",
+							"ref3": "99980",
+							"ref4": "PROVISIONS FORFAIT SOCIAL",
+							"ref5": "438600",
+							"ref6": "99980006",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Entreprise",
+							"ref2": "445668",
+							"ref3": "80",
+							"ref4": "TVA DEDUCTIBLE/PENALITES ",
+							"ref5": "445660",
+							"ref6": "80008",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Entreprise",
+							"ref2": "445668",
+							"ref3": "99999",
+							"ref4": "TVA DEDUCTIBLE /RG       ",
+							"ref5": "445660",
+							"ref6": "99999008",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HRG",
+							"ref2": "101200",
+							"ref3": "3400",
+							"ref4": "CAPITAL SOUSCRIT APPELE  ",
+							"ref5": "101200",
+							"ref6": "3400200",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HRG",
+							"ref2": "101200",
+							"ref3": "99998",
+							"ref4": "CAPITAL SOUSCRIT - APPELE",
+							"ref5": "101200",
+							"ref6": "99998200",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HRG",
+							"ref2": "401100",
+							"ref3": "3400",
+							"ref4": "FOURNISSEURS FRANCE      ",
+							"ref5": "401100",
+							"ref6": "3400",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HRG",
+							"ref2": "401100",
+							"ref3": "99998",
+							"ref4": "FOURNISSEURS             ",
+							"ref5": "401100",
+							"ref6": "99998",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Entreprise",
+							"ref2": "401100",
+							"ref3": "80",
+							"ref4": "FOURN. H.GROUPE          ",
+							"ref5": "401101",
+							"ref6": "80",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Entreprise",
+							"ref2": "401100",
+							"ref3": "99999",
+							"ref4": "FOURN. H.GROUPE          ",
+							"ref5": "401101",
+							"ref6": "99999",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Entreprise",
+							"ref2": "401100",
+							"ref3": "99800",
+							"ref4": "FOURN. H.GROUPE          ",
+							"ref5": "401101",
+							"ref6": "99800",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Logement",
+							"ref2": "401100",
+							"ref3": "80",
+							"ref4": "FOURNISSEURS             ",
+							"ref5": "401100",
+							"ref6": "80",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Logement",
+							"ref2": "401100",
+							"ref3": "99999",
+							"ref4": "FOURNISSEURS             ",
+							"ref5": "401100",
+							"ref6": "999999",
+							"ref7": "",
+							"ref8": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "Logement",
+							"ref2": "401100",
+							"ref3": "99980",
+							"ref4": "FOURNISSEURS             ",
+							"ref5": "401100",
+							"ref6": "99980",
+							"ref7": "",
+							"ref8": ""
+						}
+					]
+				},
+				"id": "5f11a7a3-fc27-4d4c-84f9-5ec91a98d843",
+				"overrideValues": true,
+				"name": "[FINEX] Transco PCG_CBS"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HR_ACCESS",
+							"ref2": "40101",
+							"ref3": "PAIE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HR_ACCESS",
+							"ref2": "40102",
+							"ref3": "PAIE"
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HR_ACCESS",
+							"ref2": "40103",
+							"ref3": "CE"
+						}
+					]
+				},
+				"id": "72149c00-ddb8-4124-a3a1-659043001b68",
+				"overrideValues": true,
+				"name": "[FINEX] Transco COMPTE_CATEGORY"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "HR_ACCESS",
+							"ref2": "HDG_BU",
+							"ref3": "62",
+							"ref4": "1",
+							"ref5": "CC1",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "",
+							"ref2": "",
+							"ref3": "",
+							"ref4": "",
+							"ref5": "",
+							"ref6": ""
+						}
+					]
+				},
+				"id": "64538ddb-9869-4882-9e7a-15b676c0f148",
+				"overrideValues": true,
+				"name": "[FINEX] Transco CENTRE DE COUT"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": "",
+					"row": [
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "72",
+							"ref2": "IR_BU",
+							"ref3": "",
+							"ref4": "SC172",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "38012",
+							"ref2": "IR_BU",
+							"ref3": "",
+							"ref4": "SL468",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "98004",
+							"ref2": "IR_BU",
+							"ref3": "",
+							"ref4": "SL523",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "62181",
+							"ref2": "IR_BU",
+							"ref3": "",
+							"ref4": "SU083",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "62",
+							"ref2": "HDG_BU",
+							"ref3": "",
+							"ref4": "SC400",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "269",
+							"ref2": "HDG_BU",
+							"ref3": "",
+							"ref4": "SC251",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "800",
+							"ref2": "HDG_BU",
+							"ref3": "",
+							"ref4": "SC175",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "801",
+							"ref2": "HDG_BU",
+							"ref3": "",
+							"ref4": "SC176",
+							"ref5": "",
+							"ref6": ""
+						},
+						{
+							"@type": "CrossReferenceRow",
+							"ref1": "6666",
+							"ref2": "HDG_BU",
+							"ref3": "",
+							"ref4": "SC400",
+							"ref5": "",
+							"ref6": ""
+						}
+					]
+				},
+				"id": "8d45127b-d260-43f4-bd9c-691036494568",
+				"overrideValues": true,
+				"name": "[FINEX] Transco SOCIETES"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "cf2e6bbe-876f-41ac-98e9-66ff25a38d8c",
+				"overrideValues": false,
+				"name": "[FINEX] Transco TYPE FOURNISSEUR"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "d3baf5dd-691f-426b-8a85-ddddc0b393e0",
+				"overrideValues": false,
+				"name": "CustomerProfileClass"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "10b2a990-9e78-421a-91fc-51586c33f489",
+				"overrideValues": false,
+				"name": "[FINEX] Transco CODE_FLUX_TRS"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "1fbe2496-b2f6-489f-9bc7-5eed2816f73c",
+				"overrideValues": false,
+				"name": "[FINEX] Transco COMPTE_BANCAIRE_TRS"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "21f09a92-3646-480b-8ff4-00cad5fad049",
+				"overrideValues": false,
+				"name": "[FINEX] Transco FOURNISSEURS"
+			},
+			{
+				"@type": "CrossReference",
+				"CrossReferenceRows": {
+					"@type": ""
+				},
+				"id": "3e170c05-9220-4a13-b94a-78494d3c3fa9",
+				"overrideValues": false,
+				"name": "[FINEX] Transco TVA"
+			}
+		]
+	},
+	"processProperties": {
+		"@type": "OverrideProcessProperties",
+		"ProcessProperty": [
+			{
+				"@type": "OverrideProcessProperty",
+				"ProcessPropertyValue": [
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "From Email Address",
+						"key": "3a5675ca-48f1-4ead-832e-14b15317a90f",
+						"value": "SMTP_BOOMI@nexity.fr",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Email Notification",
+						"key": "7a9b0f6e-ac19-4bc1-b648-4bd4d72800f4",
+						"value": "true",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Email Attachment",
+						"key": "73e87f07-6d90-4fa9-96a8-aefb1f75ea00",
+						"value": "false",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Boomi PMM",
+						"key": "3ed05a4e-1d33-4d16-addf-a445ed4adc06",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Friendly Environment Name",
+						"key": "80519947-f221-4cd7-990c-d111f0906dd6",
+						"value": "DEV",
+						"encryptedValueSet": false
+					}
+				],
+				"id": "895794aa-a1b2-4653-a7a3-4b51100ddd85",
+				"name": "[FWK] Error Handling Settings"
+			},
+			{
+				"@type": "OverrideProcessProperty",
+				"ProcessPropertyValue": [
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "S3 Bucket Name",
+						"key": "30783a13-8382-4b4c-a379-9afa0f67bd31",
+						"value": "s3-eu-west-1-dev-bmi-01",
+						"encryptedValueSet": false
+					}
+				],
+				"id": "31909db2-8831-4944-87f6-942ac9671ffe",
+				"name": " [S3] Parameter List"
+			},
+			{
+				"@type": "OverrideProcessProperty",
+				"ProcessPropertyValue": [
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Orafin Traget Folder Name",
+						"key": "27f04eff-52f3-44dd-a44c-ad85e1f9b266",
+						"value": "C:\\BOOMI\\TARGETS",
+						"encryptedValueSet": false
+					}
+				],
+				"id": "7355620e-1405-44e6-93fb-b67fdb5361bb",
+				"name": " [ORAFIN] Parameter List"
+			},
+			{
+				"@type": "OverrideProcessProperty",
+				"ProcessPropertyValue": [
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Basware In Folder Name",
+						"key": "bda2b637-50e5-4ce3-addb-05aae86bdddb",
+						"value": "dev/basware/in",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Basware Archive Folder Name",
+						"key": "59c4332a-d392-4785-9755-23858220c36a",
+						"value": "dev/basware/in/archive",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Basware Erreur Folder Name",
+						"key": "d556a07d-4f1e-48a5-8fb5-0f0cabc9f221",
+						"value": "dev/basware/in/erreur",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"label": "Basware Out Folder Name",
+						"key": "7374839a-2d1c-48ac-b3b1-b380c0b13347",
+						"value": "dev/basware/out",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"key": "27f04eff-52f3-44dd-a44c-ad85e1f9b266",
+						"encryptedValueSet": false
+					},
+					{
+						"@type": "ProcessPropertyValue",
+						"key": "30783a13-8382-4b4c-a379-9afa0f67bd31",
+						"encryptedValueSet": false
+					}
+				],
+				"id": "98689cdc-9f1f-4eb2-91a9-99a491d5186f",
+				"name": "[BASWARE] Parameter List"
+			}
+		]
+	},
+	"properties": {
+		"@type": "",
+		"property": [
+			{
+				"@type": "",
+				"name": "DPP_TEST_Flag",
+				"value": "test"
+			},
+			{
+				"@type": "",
+				"name": "DPP_ORAFIN_TARGET_FOLDER",
+				"value": "C:\\BOOMI\\TARGETS"
+			},
+			{
+				"@type": "",
+				"name": "BU_NAME",
+				"value": "IR_BU"
+			},
+			{
+				"@type": "",
+				"name": "DPP_AS400_AS001_SHARE_FOLDER",
+				"value": "F:"
+			},
+			{
+				"@type": "",
+				"name": "DPP_AS400_AS003_SHARE_FOLDER",
+				"value": "F:"
+			},
+			{
+				"@type": "",
+				"name": "RDD_FILENAME",
+				"value": "IR_AS001_REPTIERS_202004291804420167.CSV"
+			},
+			{
+				"@type": "",
+				"name": "RDD_Directory",
+				"value": "C:\\Finex\\RDD\\Clients"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_FINEX_REF_FOLDER_NAME",
+				"value": "dev/finex_ref"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_ORACLE_ERREUR_FOLDER",
+				"value": "dev/oracle_erp/in/erreur"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_ORACLE_FOLDER_NAME",
+				"value": "dev/oracle_erp/in"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_BUCKET_NAME",
+				"value": "s3-eu-west-1-dev-bmi-01"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_ORACLE_ARCHIVE_FOLDER",
+				"value": "dev/oracle_erp/in/archive"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_NOTILUS_ERREUR_FOLDER",
+				"value": "dev/notilus/in/erreur"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_NOTILUS_ARCHIVE_FOLDER",
+				"value": "dev/notilus/in/archive"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_NOTILUS_FOLDER_NAME",
+				"value": "dev/notilus/in"
+			},
+			{
+				"@type": "",
+				"name": "MSG"
+			},
+			{
+				"@type": "",
+				"name": "RDD_FOURN_BU_NAME"
+			},
+			{
+				"@type": "",
+				"name": "RDD_FOURN_DIRECTORY",
+				"value": "C:\\Finex\\RDD\\Fournisseurs"
+			},
+			{
+				"@type": "",
+				"name": "RDD_FOURN_FILENAME",
+				"value": "RESTIT_Globale20200616Modifier.csv"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_SAGE_FOLDER_NAME_OUT",
+				"value": "dev/sage/out"
+			},
+			{
+				"@type": "",
+				"name": "BFC_ID",
+				"value": "SM830"
+			},
+			{
+				"@type": "",
+				"name": "BU_ID",
+				"value": "300000001718065"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_FOLDER_NAME"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_HRACCESS_FOLDER_NAME",
+				"value": "dev/hr_access/in"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_HRACCESS_ARCHIVE_FOLDER",
+				"value": "dev/hr_access/in/archive"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_HRACCESS_ERREUR_FOLDER",
+				"value": "dev/hr_access/in/erreur"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_AVENIR_FOLDER_NAME_OUT",
+				"value": "dev/avenir/out"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_SAGE_ERREUR_FOLDER",
+				"value": "dev/sage/in/erreur"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_SAGE_FOLDER_NAME",
+				"value": "dev/sage/in"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_SAGE_ARCHIVE_FOLDER",
+				"value": "dev/sage/in/archive"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_DETERMINE_FOLDER_NAME_OUT",
+				"value": "dev/determine/out"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_SOLDE_FILENAME",
+				"value": "GL_Solde_N_20200611_1336436314.CSV"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_Effective﻿DATE",
+				"value": "2020/05/31"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_﻿BU_NAME",
+				"value": "HDG_BU"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_DIRECTORY",
+				"value": "C:\\Finex\\RDD\\Ecriture"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_CREATION﻿DATE",
+				"value": "2020/06/23"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_Solde_A_FILENAME",
+				"value": "GL_Solde_A_20200611_1336493409.CSV"
+			},
+			{
+				"@type": "",
+				"name": "RDD_GL_Detail_FILENAME",
+				"value": "GL_Detail_20200611_1336576099.CSV"
+			},
+			{
+				"@type": "",
+				"name": "DPP_S3_BASWARE_FOLDER_NAME_OUT",
+				"value": "dev/basware/out"
+			}
+		]
+	},
+	"environmentId": "4cfeea17-dccb-49e3-8c77-baabc5f5bb8a",
+	"extensionGroupId": "",
+	"id": "4cfeea17-dccb-49e3-8c77-baabc5f5bb8a"
+},
+  "profile": {
+    "name": "imenVISEO"
+  }
 }
