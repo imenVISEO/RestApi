@@ -1,6 +1,6 @@
 
 {
-  "responseAPI": 
+  "boomiAPI": 
   {
 	"@type": "EnvironmentExtensions",
 	"connections": {
